@@ -468,7 +468,7 @@ class GiftedChat extends React.Component {
         */
       return (
         <View style={styles.container} onLayout={this.onMainViewLayout}>
-          <ActionSheet ref={component => (this._actionSheetRef = component)} />
+          <ActionSheet ref={component => (this._actionSheetRef = component)} options={[]}/>
           {this.renderMessages()}
           {this.renderInputToolbar()}
         </View>
